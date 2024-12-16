@@ -30,7 +30,7 @@ def preprocess_image(image_path):
 
 # Функция предсказания
 def predict_image(model, image_tensor):
-    class_names = ['positive', 'negative']  # Метки классов
+    class_names = ['negative', 'positive']  # Метки классов
     image_tensor = image_tensor.to(device)
 
     with torch.no_grad():
