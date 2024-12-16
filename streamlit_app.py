@@ -45,6 +45,10 @@ st.title("Классификация рентгеновских снимков")
 # Загрузка изображения пользователем
 uploaded_file = st.file_uploader("Загрузите рентгеновский снимок", type=["jpg", "jpeg", "png"])
 
+st.write("Тестовые данные можно загрузить по ссылке: https://drive.google.com/drive/folders/1JXkx4-dVGnQPTB5A-lCfINF0jdq9RLoz?usp=sharing")
+
+
+
 if uploaded_file is not None:
     # Отображение загруженного изображения
     st.image(uploaded_file, caption="Загруженное изображение", use_container_width=True)
